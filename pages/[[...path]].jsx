@@ -1,6 +1,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import Head from "next/head";
+import Script from "next/script";
 
 const routes = {
   "": "index.html",
@@ -52,8 +53,8 @@ export default function StaticPage({ body, title }) {
         <title>{title}</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="stylesheet" href="/styles.css" />
-        <script src="/theme.js" defer />
       </Head>
+      <Script src="/theme.js" strategy="afterInteractive" />
       <div dangerouslySetInnerHTML={{ __html: body }} />
     </>
   );
