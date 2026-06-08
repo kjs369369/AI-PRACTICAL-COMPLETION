@@ -6,7 +6,6 @@ export default function Document() {
       <Head />
       <body>
         <Main />
-        <script src="/theme.js" defer />
         <NextScript />
       </body>
     </Html>
