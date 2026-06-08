@@ -24,6 +24,33 @@ do
   }
 done
 
+for og_tag in \
+  "og:title" \
+  "og:description" \
+  "og:url" \
+  "og:image" \
+  "og:image:width" \
+  "og:image:height" \
+  "twitter:card" \
+  "twitter:image" \
+  "rel=\"canonical\""
+do
+  rg -q "$og_tag" "$page" || {
+    echo "FAIL: missing social metadata $og_tag"
+    exit 1
+  }
+done
+
+rg -q "og-ai-practical-class-2-session-1.png" "$page" || {
+  echo "FAIL: missing lecture-specific social image"
+  exit 1
+}
+
+rg -Fq 'ogImage: extractMetaContent(html, "og:image")' "pages/[[...path]].jsx" || {
+  echo "FAIL: social image metadata is not propagated to the Next.js page"
+  exit 1
+}
+
 rg -q -- "--accent: #c9a961" styles.css || {
   echo "FAIL: missing BBC reference gold design token"
   exit 1
@@ -34,4 +61,4 @@ rg -q -- "--paper: #0a0a0a" styles.css || {
   exit 1
 }
 
-echo "PASS: student navigation and curated materials"
+echo "PASS: student navigation, curated materials, and social metadata"

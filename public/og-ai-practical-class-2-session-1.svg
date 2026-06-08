@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#0a0a0a"/>
+  <circle cx="1060" cy="105" r="230" fill="#15120b"/>
+  <circle cx="1140" cy="20" r="130" fill="#201a0e"/>
+  <path d="M80 96h1040" stroke="#c9a961" stroke-width="2"/>
+  <text x="80" y="68" fill="#c9a961" font-family="Arial, Apple SD Gothic Neo, sans-serif" font-size="24" font-weight="700" letter-spacing="5">LECTURE SUMMARY</text>
+  <text x="80" y="198" fill="#f4ead4" font-family="Arial, Apple SD Gothic Neo, sans-serif" font-size="42" font-weight="700">AI실무완성클래스</text>
+  <text x="80" y="330" fill="#ffffff" font-family="Arial, Apple SD Gothic Neo, sans-serif" font-size="108" font-weight="800">2기 1회차</text>
+  <text x="84" y="402" fill="#c9a961" font-family="Arial, Apple SD Gothic Neo, sans-serif" font-size="29" font-weight="600">녹화본 · 요약본 · 실습 프롬프트 · 관련자료</text>
+  <rect x="80" y="472" width="280" height="62" rx="31" fill="#c9a961"/>
+  <text x="220" y="512" text-anchor="middle" fill="#0a0a0a" font-family="Arial, Apple SD Gothic Neo, sans-serif" font-size="24" font-weight="700">2026년 5월 강의</text>
+  <text x="1120" y="535" text-anchor="end" fill="#f4ead4" font-family="Arial, Apple SD Gothic Neo, sans-serif" font-size="25" font-weight="600">강사 김진수</text>
+  <text x="1120" y="574" text-anchor="end" fill="#8f8676" font-family="Arial, Apple SD Gothic Neo, sans-serif" font-size="20">AI활용전문가 &amp; GEO마케팅전문가</text>
+</svg>
