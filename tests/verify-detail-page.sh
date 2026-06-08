@@ -41,8 +41,8 @@ do
   }
 done
 
-rg -q "og-ai-practical-class-2-session-1.png" "$page" || {
-  echo "FAIL: missing lecture-specific social image"
+rg -q "og-aiclab-profile-v2.png" "$page" || {
+  echo "FAIL: missing the supplied AICLab social image"
   exit 1
 }
 
